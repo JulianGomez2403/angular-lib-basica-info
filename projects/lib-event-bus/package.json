@@ -1,0 +1,23 @@
+{
+  "name": "@info/lib-event-bus",
+  "version": "0.1.8",
+  "private": false,
+  "scripts": {
+    "build": "ng build --configuration production"
+  },
+  "publishConfig": {
+    "directory": "../../dist/lib-event-bus",
+    "private": true
+  },
+  "peerDependencies": {
+    "@angular/common": "^20.3.12",
+    "@angular/forms": "^20.3.12",
+    "@angular/core": "^20.3.12",
+    "@ngxs/store": "^20.1.0",
+    "zod": "^3.24.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

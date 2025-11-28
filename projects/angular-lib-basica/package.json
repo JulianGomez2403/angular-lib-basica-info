@@ -1,0 +1,19 @@
+{
+  "name": "@info/lobo-angular-lib-basica",
+  "version": "0.1.10",
+  "scripts": {
+    "build": "ng build --configuration production"
+  },
+  "publishConfig": {
+    "directory": "../../dist/angular-lib-basica",
+    "private": true
+  },
+  "dependencies": {
+    "@info/lib-config": "*",
+    "@info/lib-event-bus": "0.1.8",
+    "@info/lib-logger": "*",
+    "@info/lib-authentication": "*",
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

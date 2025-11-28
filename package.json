@@ -1,0 +1,38 @@
+{
+  "name": "angular-lib-basica",
+  "version": "0.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "powershell -Command \"npm run build:libs; npm run build:angular-lib-basica\"",
+    "build:angular-lib-basica": "powershell -Command \"ng build angular-lib-basica; cd dist/angular-lib-basica; npm pack\"",
+    "build:lib-config": "powershell -Command \"ng build lib-config; cd dist/lib-config; npm pack\"",
+    "build:lib-authentication": "powershell -Command \"ng build lib-authentication; cd dist/lib-authentication; npm pack\"",
+    "build:lib-logger": "powershell -Command \"ng build lib-logger; cd dist/lib-logger; npm pack\"",
+    "build:lib-event-bus": "powershell -Command \"ng build lib-event-bus; cd dist/lib-event-bus; npm pack\"",
+    "build:libs": "powershell -Command \"npm run build:lib-config; npm run build:lib-logger; npm run build:lib-event-bus; npm run build:lib-authentication\"",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "workspaces": [
+    "projects/*"
+  ],
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^20.3.12",
+    "@angular/compiler": "^20.3.12",
+    "@angular/core": "^20.3.12",
+    "@angular/forms": "^20.3.12",
+    "@angular/router": "^20.3.12",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zod": "^3.24.2",
+    "zone.js": "~0.15.1"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.3.12",
+    "@angular/cli": "^20.3.12",
+    "ng-packagr": "^20.3.2",
+    "typescript": "~5.9.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@info/lib-authentication",
+  "version": "1.0.7",
+  "private": false,
+  "scripts": {
+    "build": "ng build --configuration production"
+  },
+  "publishConfig": {
+    "directory": "../../dist/lib-authentication",
+    "private": true
+  },
+  "peerDependencies": {
+    "@angular/common": "^20.3.12",
+    "@angular/core": "^20.3.12"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
