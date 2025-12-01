@@ -1,6 +1,6 @@
 {
-  "name": "@info/lobo-angular-lib-basica",
-  "version": "0.1.10",
+  "name": "@info/angular-lib-basica",
+  "version": "0.1.13",
   "scripts": {
     "build": "ng build --configuration production"
   },
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@info/lib-config": "*",
-    "@info/lib-event-bus": "0.1.8",
+    "@info/lib-event-bus": "*",
     "@info/lib-logger": "*",
     "@info/lib-authentication": "*",
     "tslib": "^2.3.0"
