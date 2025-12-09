@@ -1,6 +1,6 @@
 {
   "name": "@info/lib-event-bus",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "private": false,
   "scripts": {
     "build": "ng build --configuration production"

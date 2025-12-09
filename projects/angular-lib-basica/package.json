@@ -1,6 +1,6 @@
 {
   "name": "@info/angular-lib-basica",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "scripts": {
     "build": "ng build --configuration production"
   },
